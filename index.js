@@ -20,6 +20,9 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+var x = 5
+console.log(x)
+
 
 /* Challenge #2
  * Create variables for your first and last name then print your full name
@@ -34,6 +37,11 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+var a = "Andres"
+var b = "Saldarriaga"
+console.log(a+" "+b)
+
+
 /* Challenge #3
  * Calculate the total price rounded to two decimals
  *
@@ -47,6 +55,12 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+var price = 12.38
+var quantity = 20
+var total = (price * quantity)
+console.log(total.toFixed(2))
+
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -63,6 +77,16 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+var weather = "Rainy"
+var message;
+if (weather == "Sunny") {
+    message = "Yay! It's sunny outside";
+}
+else{
+    message = "Aww! It's not sunny outside";
+}
+console.log(message)
+
 
 /* Challenge #5
  * Create a function that returns any string
@@ -77,6 +101,12 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+
+function myFunction() {
+    return "random string";   
+  }
+console.log(myFunction())
+
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
  *
@@ -89,6 +119,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+myArrowFunction = () => "random string";
+
+console.log(myArrowFunction())
 
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
@@ -103,6 +137,12 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+var str = "random string"
+function stringToUpper(str) { 
+    return str.toUpperCase()
+}
+console.log(stringToUpper(str))
 
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
@@ -120,3 +160,14 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+
+function multiplyByTwo(number){
+    return number * 2
+}
+var num1 = multiplyByTwo(1)
+var num2 = multiplyByTwo(5)
+var num3 = multiplyByTwo(10)
+ console.log(num1, num2, num3)
+
+ 
